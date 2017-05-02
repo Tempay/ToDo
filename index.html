@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>ToDo</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+
+</head>
+<body>
+    <div class="container col-md-offset-2 col-md-10">
+        <h1 class="title col-md-offset-3 col-md-4">My ToDo</h1>
+        <!-- add ToDo form -->
+            <form class="">
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" id="todo" placeholder="My ToDo">
+              </div>
+              <div class="form-group col-md-3">
+                <input type="date" class="form-control" id="date">
+              </div>
+              <div class="col-md-1">
+                  <button type="submit" class="btn btn-primary">Add</button>
+              </div>
+            </form>
+        <!-- end of add ToDo form -->
+
+        <!-- ToDo list -->
+        <div class="todo-list col-md-10 tasks">
+            <div class="task-item list-group">
+                <a class="list-group-item clearfix" onclick="alert('Done')">
+                    ToDo 1
+                    <span class="pull-right">
+                        <span class="btn btn-xs btn-default" onclick="alert('Removed')">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                        </span>
+                    </span>
+                </a>
+                <a class="task-item list-group-item clearfix" onclick="alert('Removed')">
+                    ToDo 2
+                    <span class="pull-right">
+                        <span class="btn btn-xs btn-default" onclick="alert('Removed')">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                        </span>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!-- end of ToDo list -->
+
+    </div>
+    <script src="lib/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
